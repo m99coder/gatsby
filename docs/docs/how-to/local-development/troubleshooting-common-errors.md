@@ -239,7 +239,7 @@ Module not found: Error: Can't resolve `../..SomeFile.svg`
   ...
 ```
 
-The build is failing to find the file at `../..SomeFile.svg`. This can be frustrating if your site works when you when run it locally with `gatsby develop`, and even works when you run `gatsby build` and `gatsby serve` locally. A likely problem is that the operating system you are running locally is different than the one where your site is deployed. Oftentimes your deployment target is running some distribution and flavor of Linux.
+The build is failing to find the file at `../..SomeFile.svg`. This can be frustrating if your site works when you run it locally with `gatsby develop`, and even works when you run `gatsby build` and `gatsby serve` locally. A likely problem is that the operating system you are running locally is different than the one where your site is deployed. Oftentimes your deployment target is running some distribution and flavor of Linux.
 
 The most common culprit to prompt this issue is with filepaths having mixed capitalization. In the example above, check to make sure that the file is actually named `SomeFile.svg` and not something different like `Somefile.svg` or `somefile.svg`. Some operating systems will pick up on this discrepancy for you and find the image without any problems. Your deployment environment may not.
 
